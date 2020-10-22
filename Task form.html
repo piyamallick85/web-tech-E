@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<h1>1. Create a HTML structure for the following layout:</h1>
+<body style="background-color:grey;">
+<p> <span style="color:red;font-weight:bold">*</span> - Denotes Required Information</p>
+<p> <b> > 1 Donation</b>.     > 2 Confirmation       > Thank you!</p>
+<p> <span style="color:red;font-weight:bold">DONOR INFORMATION</span> 
+<form>
+	<b> First Name </b> <span style="color:red;font-weight:bold">*</span>  <input type="text" name= "textbox1" size ="40"><br> <br>
+	<b> Last Name </b> <span style="color:red;font-weight:bold">*</span>  <input type="text" name= "textbox1"   size ="40"><br> <br>
+	<b> Company </b>  : <input type="text" name= "textbox1"  size = "40"><br> <br>
+	<b> Address 1 </b> <span style="color:red;font-weight:bold">*</span> : <input type="text" name= "textbox1"   size = "40"><br> <br>
+	<b> Address 2 </b>  : <input type="text" name= "textbox1"  size = "40"><br> <br><b> 
+	<b> City </b> <span style="color:red;font-weight:bold">*</span>  <input type="text" name= "textbox1"   size = "40"><br> <br>
+	<b> State </b> <span style="color:red;font-weight:bold">*</span> 
+	 <input type="text" name= "textbox1"   size = "40"><br> <br>
+     <label for="state">select state:</label>
+  <select id="state" name="state">
+    <option value="dhaka">dhaka</option>
+    <option value="india">india</option>
+    <option value="pakistan">pakistan</option>
+    <option value="thailand">thailand</option>
+  </select> <br> <br>
+  <b> Zip code </b> <span style="color:red;font-weight:bold">*</span> : <input type="text" name= "textbox1"   size = "40"><br> <br>
+
+ 
+  <label for="country">select country:</label>
+  <select id="country" name="country">
+    <option value="dhaka">dhaka</option>
+    <option value="khulna">khulna</option>
+    <option value="comilla">comilla</option>
+    <option value="rangpur">rangpur</option>
+  </select> <br> <br>
+  <b> Phone </b>  : <input type="text" name= "textbox1"  size = "40"><br> <br>
+  <b> Fax </b>  : <input type="text" name= "textbox1"  size = "40"><br> <br>
+ <b> Email </b> <span style="color:red;font-weight:bold">*</span> : <input type="text" name= "textbox1"   size = "40"><br> <br>
+<b> Donation Amount </b> <span style="color:red;font-weight:bold">*</span> : 
+<input type="radio" id="None" name="amount" value="None"checked> 
+  <label for="none">None</label> 
+  <input type="radio" id="$ 50" name="amount" value="$ 50">
+  <label for="$ 50">$ 50</label>
+  <input type="radio" id="$ 75" name="amount" value="$ 75">
+  <label for="$ 75">$ 75</label>
+  <input type="radio" id="$ 100" name="amount" value="$ 100">
+  <label for="$ 100">$ 100</label>
+  <input type="radio" id="$ 250" name="amount" value="$ 250">
+  <label for="$ 250">$ 250</label>
+  <input type="radio" id="other" name="amount" value="other">
+  <label for="other">Other</label> 
+  <p>(check a button or type in your amount) <b> Other Amount $ </b>  : <input type="text" name= "textbox1"  size = "40">  </p>
+  <b> Recurring Donation</b>
+   <input type="checkbox" id="statement" name="statement" value="regular basis">
+  <label for="statement"> I am intersting in giving on a regular basis</label>
+  <p>(check if yes) </p>
+  <p> Monthly Credit Card $    <input type="text" name= "textbox1"  size = "20"> For <input type="text" name="textbox1" size="20"> Months </p>
+  <p> <span style="color:red;font-weight:bold">Honorarium and Memorial Donation Information</span> <br> 
+  <b> I would like to make this donation </b> <br>
+<input type="radio" id="To Honour" name="information" value="To Honour">
+  <label for="to honour">TO Honour</label><br>
+  <input type="radio" id="In Memory of" name="information" value="In Memory of">
+  <label for="In Memory of">In Memory of</label><br>
+  <b> Name </b>   <input type="text" name= "textbox1"  size = "40"><br> <br>
+  <b> Acknowledge Donation to </b>   <input type="text" name= "textbox1"  size = "40"><br> <br>
+  <b> Address </b>   <input type="text" name= "textbox1"  size = "40"><br> <br>
+  <b> City </b>   <input type="text" name= "textbox1"  size = "40"><br> <br>
+  <b> State </b>   <input type="text" name= "textbox1"   size = "40"><br> <br>
+     <label for="state">select state:</label>
+  <select id="state" name="state">
+    <option value="dhaka">dhaka</option>
+    <option value="india">india</option>
+    <option value="pakistan">pakistan</option>
+    <option value="thailand">thailand</option>
+  </select> <br> <br>
+  <b> zip </b>   <input type="text" name= "textbox1"  size = "40"><br> <br>
+  <p> <span style="color:red;font-weight:bold">Additional Information</span> 
+  <p>please entry  your name,company or organization as you would like it to appear in our publications:</p> 
+  <b> Name </b>   <input type="text" name= "textbox1"  size = "40"><br> <br>
+  <input type="checkbox" id="statement" name="statement" value="to remain anonymous">
+  <label for="statement"> I would like my gift to remain anonymous.</label> <br> <br>
+  <input type="checkbox" id="statement" name="statement" value="matching gift program">
+  <label for="statement">  My employer offers a matching gift program.I will mail the matching gift form.</label><br> <br>
+  <input type="checkbox" id="statement" name="statement" value="not mailing a thank you letter">
+  <label for="statement"> please save the cost of acknowledging this  gift by not mailing a thank you letter.</label><br> <br>
+  <p> <p> Comments </p>  <p>(please type any question or feedback here)</p>
+  <textarea name="t1" rows="7" cols="40">
+  </textarea><br> <br>
+  <b> How many we contact you? </b> <br>
+  <input type="checkbox" id="statement" name="statement" value="mail">
+  <label for="statement"> E-mail</label> <br> 
+  <input type="checkbox" id="statement" name="statement" value="postal mail">
+  <label for="statement">  Postal Mail</label><br> 
+  <input type="checkbox" id="statement" name="statement" value="Telephone">
+  <label for="statement">Telephone</label><br> 
+  <input type="checkbox" id="statement" name="statement" value="Fax">
+  <label for="statement">Fax</label><br> 
+  <p>I would like to receive newsletters and information about special events by:</p>
+  <input type="checkbox" id="statement" name="statement" value="mail">
+  <label for="statement"> E-mail</label> <br> 
+  <input type="checkbox" id="statement" name="statement" value="postal mail">
+  <label for="statement">  Postal Mail</label><br> <br> <br>
+  <input type="checkbox" id="statement" name="statement" value="about volunteering with the"> 
+  <label for="statement"> I would like information about volunteering with the <input type="text" name= "textbox1"  size = "40" </label> <br> 
+  <input type ="Reset" value="Reset">
+   <input type ="Continue" value="Continue">
+   <p style="font-size:25px">
+&#128274;Donate online with confidence. you are on a secure server. </p>
+<p> If you have any problems or questions, please contact support</span> .</p>
+
+
+
+  
+
+
+
+
+
+
+  	
+
+
+  
+
+
+	 
+
+	
+
+	
+</form>
+
+
+</body>
+</html
